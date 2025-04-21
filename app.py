@@ -20,5 +20,6 @@ def greet():
     user_input = request.form['username']
     return f"Hello {user_input}, welcome to this app for Docker Demostration."
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

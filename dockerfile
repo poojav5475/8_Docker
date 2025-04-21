@@ -8,13 +8,13 @@ WORKDIR /app
 COPY . /app
 
 #  Install any neede pakages specified in requirements.txt
-RUN pip install --no-chache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 5000 available to the world outside this container0
 EXPOSE 5000
 
 # Define environment variable
-ENV FLASK_APP = app.python
+ENV FLASK_APP=app.py
 
 # Run the Flask app
-CMD ["flask","run","--host = 0.0.0.0"]
+CMD ["flask","run","--host=0.0.0.0","--port=5000"]
